@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Student Registration</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: #f4f4f4;
+            }
+            form {
+                max-width: 500px;
+                margin: 20px auto;
+                background: #fff;
+                padding: 20px;
+                border-radius: 5px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            }
+            h2 {
+                text-align: center;
+                margin-bottom: 20px;
+            }
+            label {
+                font-weight: bold;
+            }
+            select {
+                width: 100%;
+                padding: 8px;
+                margin: 5px 0 20px 0;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                box-sizing: border-box;
+            }
+            input[type="radio"] {
+                margin-right: 10px;
+            }
+            input[type="submit"],
+            input[type="button"] {
+                background-color: #4CAF50;
+                color: white;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+                float: right;
+            }
+            fieldset {
+                margin-bottom: 20px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                padding: 15px;
+            }
+            legend {
+                font-weight: bold;
+                margin-bottom: 10px;
+            }
+            input[type="text"],
+            input[type="date"], input[type="tel"], input[type="email"] {
+                width: 100%;
+                padding: 8px;
+                margin: 5px 0 20px 0;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                box-sizing: border-box;
+            }
+        </style>
+    </head>
+    <body>
+        <form>
+            <h2>STUDENT REGISTRATION</h2>
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label for="name">Name</label><br>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required> <br>
+                <label for="DoB">Date of birth</label><br>
+                <input type="date" id="DoB" name="DoB" required> <br>
+                <label>Gender</label> <br>
+                <input type="radio" id="male" name="gender" value="Male" required>
+                <label for="male">Male</label> <br>
+                <input type="radio" id="female" name="gender" value="Female" required>
+                <label for="female">Female</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Contact Information</legend>
+                <label for="address">Address</label><br>
+                <input type="text" id="address" name="address" placeholder="e.g 349-09000 Wakanda" required><br>
+                <label for="telephone">Telephone</label><br>
+                <input type="tel" id="telephone" name="telephone" placeholder="Enter your phone number" required><br>
+                <label for="email">Email</label><br>
+                <input type="email" id="email" name="email" placeholder="name@example.com" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Course Selection</legend>
+                <label>Select your course</label>
+                <select name="course" required>
+                    <optgroup label="Engineering">
+                        <option value="Civil Engineering">Civil Engineering</option>
+                        <option value="Mechanical Engineering">Mechanical Engineering</option>
+                        <option value="Aeronautical Engineering">Aeronautical Engineering</option>
+                        <option value="Electrical Engineering">Electrical Engineering</option>
+                    </optgroup>
+                    <optgroup label="Health Sciences">
+                        <option value="Medicine and Surgery">Medicine and Surgery</option>
+                        <option value="Pharmacy">Pharmacy</option>
+                        <option value="Dental Surgery">Dental Surgery</option>
+                        <option value="Nursing">Nursing</option>
+                    </optgroup>
+                    <optgroup label="Arts">
+                        <option value="Political Science">Political Science</option>
+                        <option value="Sociology">Sociology</option>
+                        <option value="Criminology">Criminology</option>
+                        <option value="Psychology">Psychology</option>
+                    </optgroup>
+                </select>
+            </fieldset>
+            <button type="reset">Cancel</button>
+            <button type="submit">Register</button>
+
+        </form>
+    </body>
+</html>
