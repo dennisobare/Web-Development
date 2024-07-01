@@ -120,6 +120,7 @@
             .section-container {
                 display: flex;
                 flex-direction: column;
+                flex-wrap: wrap;
                 justify-content: center;
                 align-items: center;
                 width: 100%;
@@ -128,7 +129,7 @@
                 padding: 5px;
                 border: 1px  #ccc;
                 border-radius: 8px;
-                
+                gap: 20px;
                 text-align: center;
             }
 
@@ -148,6 +149,7 @@
                 color: blue;
                 text-decoration: none;
             }
+
 
             .card-list {
                 list-style-type: none;
@@ -251,7 +253,9 @@
         <section class="section-main" id="about">
             <div class="section-container">
                 <h2>About Me</h2>
-                <p>Hi there! I'm Dennis Obare, a passionate and driven full-stack developer with over five years of experience in building dynamic, user-friendly web applications. My journey in the world of coding started during my college years, and since then, I have honed my skills in both front-end and back-end development.</p>
+                <div class="about-text">
+                    <p>Hi there! I'm Dennis Obare, a passionate and driven full-stack developer with over five years of experience in building dynamic, user-friendly web applications. My journey in the world of coding started during my college years, and since then, I have honed my skills in both front-end and back-end development.</p>
+                </div>
             </div>
         </section>
         <section class="section-main" id="skills">
